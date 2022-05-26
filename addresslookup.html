@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Demo using OGCIO Address Lookup Service</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="addresslookup.js"></script>
+
+
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Demo using OGCIO Address Lookup Service</h1>
+        <div class="form-group">
+          <label for="name">Address</label>
+          <input type="text" class="form-control" id="address" name="name" value="旺角白布街22號藝興大廈地下4號舖" placeholder="English Name">
+        </div>
+        <!--
+        <div class="form-group form-inline">
+          <label for="long">Long:</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="long" name="long" placeholder="Long">
+          </div>
+          <label for="lat">Lat:</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="lat" name="lat" placeholder="Lat">
+          </div>
+        </div>
+        -->
+        <button class="btn btn-default" id="buttonDisplayAddress">Display Suggested Address</button>
+        <div id="addressdiv" style="width:100%"></div>
+      </div>
+    </section>
+
+  </body>
+</html>
